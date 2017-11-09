@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musikt.iml" filepath="$PROJECT_DIR$/.idea/modules/Musikt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musikt_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Musikt_main.iml" group="Musikt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musikt_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Musikt_test.iml" group="Musikt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-core.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-core.iml" group="musikt-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_main.iml" group="musikt-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_test.iml" group="musikt-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-networking.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-networking.iml" group="musikt-networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-networking/musikt-networking_main.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-networking/musikt-networking_main.iml" group="musikt-networking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-networking/musikt-networking_test.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-networking/musikt-networking_test.iml" group="musikt-networking" />
+    </modules>
+  </component>
+</project>

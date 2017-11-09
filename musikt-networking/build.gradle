@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+sourceSets {
+    main.java.srcDirs += 'src/main'
+    test.java.srcDirs += 'src/test'
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_version"
+    compile "io.jsonwebtoken:jjwt:$jjwt_version"
+    compile project(':musikt-core')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}
