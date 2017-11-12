@@ -1,3 +1,4 @@
 include 'musikt-core'
 include 'musikt-networking'
+include 'musikt-containers'
 

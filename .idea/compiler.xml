@@ -2,14 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="musikt-containers_main" target="1.8" />
+      <module name="musikt-containers_test" target="1.8" />
       <module name="musikt-core_main" target="1.8" />
       <module name="musikt-core_test" target="1.8" />
       <module name="musikt-networking_main" target="1.8" />
       <module name="musikt-networking_test" target="1.8" />
       <module name="musikt_main" target="1.8" />
       <module name="Musikt_main" target="1.8" />
-      <module name="Musikt_test" target="1.8" />
       <module name="musikt_test" target="1.8" />
+      <module name="Musikt_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musikt.iml" filepath="$PROJECT_DIR$/.idea/modules/Musikt.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musikt_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Musikt_main.iml" group="Musikt" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Musikt_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Musikt_test.iml" group="Musikt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-containers.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-containers.iml" group="musikt-containers" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-containers/musikt-containers_main.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-containers/musikt-containers_main.iml" group="musikt-containers" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-containers/musikt-containers_test.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-containers/musikt-containers_test.iml" group="musikt-containers" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-core.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-core.iml" group="musikt-core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_main.iml" group="musikt-core" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/musikt-core/musikt-core_test.iml" group="musikt-core" />
