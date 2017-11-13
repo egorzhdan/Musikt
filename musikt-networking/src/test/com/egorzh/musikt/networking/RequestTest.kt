@@ -1,14 +1,22 @@
 package com.egorzh.musikt.networking
 
+import com.egorzh.musikt.networking.auth.Credentials
 import java.net.URL
+import kotlinx.coroutines.experimental.*
 import org.junit.Test
 import org.junit.Assert.*
-import kotlinx.coroutines.experimental.*
+import org.junit.Before
 
 /**
  * @author Egor Zhdan
  */
 internal class RequestTest {
+    @Before
+    fun setUp() {
+        Credentials.teamID = "team"
+        Credentials.privateKey = "key"
+    }
+
     @Test(timeout = 5000)
     fun sendOK() {
         val req = Request(URL("http://httpbin.org/status/200"))
