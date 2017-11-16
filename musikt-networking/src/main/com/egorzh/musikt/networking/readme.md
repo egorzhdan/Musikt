@@ -1,0 +1,1 @@
+This module consists of coroutine-based HTTP `Request` implementation, as well as the `auth` mechanism.
