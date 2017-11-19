@@ -2,9 +2,15 @@
 
 ```
 // Retrieve an artist by ID:
-val a = AppleMusic.getArtist("178834") // returns an Artist instance
-println(a.name)                        // prints "Bruce Springsteen"
-println(a.genreNames.joinToString())   // prints "Rock"
+val a = AppleMusic.getArtist("178834")  // returns an Artist instance
+println(a.name)                         // prints "Bruce Springsteen"
+println(a.genreNames.joinToString())    // prints "Rock"
+
+// Retrieve an album by ID:
+val a = AppleMusic.getAlbum("310730204")  // returns an Album instance
+print(a.name)                             // prints "Born to Run"
+print(a.artistName)                       // prints "Bruce Springsteen"
+print(a.editorialNotes?.short)
 ```
 
 Musikt utilizes Kotlin coroutines to retrieve data from the API asynchronously without using callbacks/futures/rx.
