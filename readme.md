@@ -2,9 +2,11 @@
 
 ```
 // Retrieve an artist by ID:
-val a = AppleMusic.getArtist("178834")  // returns an Artist instance
-println(a.name)                         // prints "Bruce Springsteen"
-println(a.genreNames.joinToString())    // prints "Rock"
+val a = AppleMusic.getArtist("178834")    // returns an Artist instance
+println(a.name)                           // prints "Bruce Springsteen"
+println(a.genreNames.joinToString())      // prints "Rock"
+val b = a.albums                          // list of references to albums
+val c = b.first().fetch()                 // loads and returns an Album
 
 // Retrieve an album by ID:
 val a = AppleMusic.getAlbum("310730204")  // returns an Album instance

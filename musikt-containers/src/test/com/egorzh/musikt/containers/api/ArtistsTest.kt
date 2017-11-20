@@ -43,4 +43,15 @@ class ArtistsTest {
         assertEquals("https://itunes.apple.com/us/artist/bob-dylan/id462006", a2.url)
     }
 
+    @Test
+    fun albums() = runBlocking {
+        val id = "178834"
+        val a = AppleMusic.getArtist(id, mock(id))
+        assertNotNull(a)
+        if (a == null) return@runBlocking
+
+        assertEquals(25, a.albums.size)
+        assertEquals("1112053294", a.albums.firstOrNull()?.id)
+    }
+
 }

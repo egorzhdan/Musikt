@@ -2,6 +2,8 @@ package com.egorzh.musikt.containers.storages
 
 import com.beust.klaxon.array
 import com.beust.klaxon.string
+import com.egorzh.musikt.containers.relations
+import com.egorzh.musikt.core.Reference
 import com.egorzh.musikt.core.Resource
 import com.egorzh.musikt.core.models.*
 
@@ -21,12 +23,13 @@ class ArtistStorage internal constructor(res: Resource) : Artist {
             ?: throw IllegalArgumentException("url not found")
 
 
-    override val albums: List<Album>
+    override val albums: List<Reference<Album>> = res.relationships.relations("albums", ::AlbumStorage)
+            ?: throw IllegalArgumentException("genre names not found")
+
+    override val genres: List<Reference<Genre>>
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
-    override val genres: List<Genre>
+    override val musicVideos: List<Reference<MusicVideo>>
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
-    override val musicVideos: List<MusicVideo>
-        get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
-    override val playlists: List<Playlist>
+    override val playlists: List<Reference<Playlist>>
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
 }
