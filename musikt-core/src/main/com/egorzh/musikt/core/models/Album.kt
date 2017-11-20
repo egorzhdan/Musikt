@@ -1,5 +1,7 @@
 package com.egorzh.musikt.core.models
 
+import com.egorzh.musikt.core.Reference
+
 /**
  * @author Egor Zhdan
  */
@@ -19,7 +21,7 @@ interface Album {
     val trackCount: Int
     val url: String
 
-    val artists: List<Artist>
-    val genres: List<Genre>
+    val artists: List<Reference<Artist>>
+    val genres: List<Reference<Genre>>
     // todo list of tracks
 }

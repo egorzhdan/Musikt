@@ -1,5 +1,7 @@
 package com.egorzh.musikt.core.models
 
+import com.egorzh.musikt.core.Reference
+
 /**
  * @author Egor Zhdan
  */
@@ -9,8 +11,8 @@ interface Artist {
     val editorialNotes: String?
     val url: String
 
-    val albums: List<Album>
-    val genres: List<Genre>
-    val musicVideos: List<MusicVideo>
-    val playlists: List<Playlist>
+    val albums: List<Reference<Album>>
+    val genres: List<Reference<Genre>>
+    val musicVideos: List<Reference<MusicVideo>>
+    val playlists: List<Reference<Playlist>>
 }
