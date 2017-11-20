@@ -10,17 +10,4 @@ import com.egorzh.musikt.networking.RequestException
 /**
  * @author Egor Zhdan
  */
-object AppleMusic {
-    internal suspend fun Request.handle(): JsonObject? = handleMultiple()?.firstOrNull()
-
-    internal suspend fun Request.handleMultiple(): JsonArray<JsonObject>? {
-        try {
-            return getJson().array<JsonObject>("data")
-        } catch (e: RequestException) {
-            if (e.isNotFound) return null
-            throw e
-        }
-    }
-
-    internal fun JsonObject.makeResource() = Resource(this)
-}
+object AppleMusic
