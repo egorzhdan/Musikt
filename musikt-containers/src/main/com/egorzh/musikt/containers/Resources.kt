@@ -8,7 +8,7 @@ import com.egorzh.musikt.core.Resource
 
 internal fun <T> JsonObject.relations(fieldName: String, factory: (Resource) -> (T)): List<Relation<T>>? =
         obj(fieldName)?.array<JsonObject>("data")?.map {
-            Relation<T>(
+            Relation(
                     it.string("id") ?: throw IllegalArgumentException("relation id not found"),
                     it.string("type") ?: throw IllegalArgumentException("type not found"),
                     factory

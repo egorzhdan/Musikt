@@ -24,7 +24,7 @@ class ArtistStorage internal constructor(res: Resource) : Artist {
 
 
     override val albums: List<Reference<Album>> = res.relationships.relations("albums", ::AlbumStorage)
-            ?: throw IllegalArgumentException("genre names not found")
+            ?: throw IllegalArgumentException("album relations not found")
 
     override val genres: List<Reference<Genre>>
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.

@@ -1,13 +1,11 @@
 package com.egorzh.musikt.containers.api
 
 import com.egorzh.musikt.core.models.Artist
+import com.egorzh.musikt.containers.*
 import com.egorzh.musikt.containers.storages.ArtistStorage
 import com.egorzh.musikt.networking.RequestFactory
 import com.egorzh.musikt.networking.Requests
 
-/**
- * @author Egor Zhdan
- */
 suspend fun AppleMusic.getArtist(id: String, factory: RequestFactory = Requests.defaultFactory): Artist? =
         Requests.artist(id, factory).handle()?.makeResource()?.let(::ArtistStorage)
 
